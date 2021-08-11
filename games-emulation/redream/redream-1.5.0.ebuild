@@ -8,7 +8,7 @@ DESCRIPTION="The Redream Sega Dreamcast emulator, distributed in binary format."
 
 HOMEPAGE="https://redream.io/"
 
-SRC_URI="https://redream.io/${PN}.x86_64-linux-v${PV}.tar.gz"
+SRC_URI="https://redream.io/download/${PN}.x86_64-linux-v${PV}.tar.gz"
 
 RESTRICT="mirror strip bindist"
 
@@ -31,17 +31,12 @@ DEPEND="${RDEPEND}"
 QA_PRESTRIPPED="*"
 QA_PREBUILT="opt/${PN}/redream"
 
-src_unpack() {
-	:
-}
-
 src_install(){
 	mkdir -p "${ED%/}/opt/${PN}"
+	mv "redream" "${ED%/}/opt/${PN}" 
 	cd "${ED%/}/opt/${PN}/"
-	unpack ${A}
-	cd "${FILESDIR}"
-	domenu "${PN}.desktop"
-	newicon "redream.png" ${PN}.png
+	domenu "${FILESDIR}/${PN}.desktop"
+	newicon "${FILESDIR}/${PN}.png" ${PN}.png
 }
 
 pkg_postinst() {
