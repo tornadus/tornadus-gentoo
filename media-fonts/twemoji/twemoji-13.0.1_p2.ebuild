@@ -5,7 +5,7 @@ EAPI=7
 
 inherit font
 
-FEDREL="fc33"
+FEDREL="fc35"
 MY_PV="${PV/_p/-}.${FEDREL}"
 
 DESCRIPTION="Twitter Emoji for everyone."
