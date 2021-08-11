@@ -4,6 +4,8 @@
 EAPI=7
 
 
+inherit desktop xdg-utils
+
 DESCRIPTION="The Redream Sega Dreamcast emulator, distributed in binary format."
 
 HOMEPAGE="https://redream.io/"
