@@ -20,6 +20,8 @@ KEYWORDS="-* ~amd64"
 
 IUSE="X sdl2"
 
+S="${WORKDIR}"
+
 RDEPEND="
 	>=media-libs/libsdl2-2.0.14-r1 
 	virtual/opengl"
