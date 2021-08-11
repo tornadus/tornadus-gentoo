@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.5.0
+Type=Application
+Terminal=false
+Exec=/opt/redream/redream
+Name=Redream Emulator
+Icon=redream
