@@ -29,6 +29,10 @@ DEPEND="${RDEPEND}"
 QA_PRESTRIPPED="*"
 QA_PREBUILT="opt/${PN}/redream"
 
+src_unpack() {
+	:
+}
+
 src_install(){
 	mkdir -p "${ED%/}/opt/${PN}"
 	cd "${ED%/}/opt/${PN}/"
